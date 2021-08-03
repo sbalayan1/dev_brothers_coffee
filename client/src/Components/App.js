@@ -112,8 +112,10 @@ let App = () => {
   // Object.values(user).map(user => setCurrentUser(user)
 
 const {list} = data;
-const {guides} = GuideData;
+
 const {us} = OurStoryData;
+
+
   if (currentUser === null) {
     history.push('/login')
     return (
