@@ -17,7 +17,7 @@ import BrewHeader from './BrewMethods/BrewHeader';
 import data from './BrewMethods/data';
 import OurStoryMainPage from './Our Story/OurStoryMainPage'
 import OurStoryData from './Our Story/OurStorydata'
-import GuidesMainPage from './BrewMethods/GuidesMainPage'
+
 let App = () => {
   const [currentUser, setCurrentUser] = useState({
     id: 0,
@@ -192,9 +192,6 @@ const {us} = OurStoryData;
                 <MainPage list= {list}
                    />
                    </Route>
-                   <Route exact path='/guides'>
-                <GuidesMainPage list={list}/>
-              </Route>
               <Route exact path='/our_story'>
                 <OurStoryMainPage us= {us} />
               </Route>
