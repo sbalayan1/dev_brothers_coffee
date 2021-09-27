@@ -2,6 +2,8 @@ import {React, useState, useEffect} from 'react'
 import {useHistory} from 'react-router-dom'
 let Drink = ({drink, currentUser}) => {
     let findCurrentOrder = currentUser.orders.find(order => order.current_order===true)
+
+    console.log(currentUser)
     const history = useHistory()
     const [currentOrder, setCurrentOrder] = useState({
         id: "",
